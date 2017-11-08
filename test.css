@@ -1,0 +1,186 @@
+/* 
+* CSS Color guide
+Light Grey - #e6e6e6
+Light shade -#f6f6f6
+Black - #252525
+Blue - #1E90FF
+*/
+
+h1, h2{
+    text-transform: uppercase;
+}
+
+/*Global Styles*/
+html, body {
+    max-width: 100%;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    
+}
+
+img, embed, object, video{
+    max-width: 100%;
+}
+
+p, h1, h2, h3, h4,h5, li, ul
+{
+    font-family: 'Ubuntu', sans-serif;
+}
+ul{
+    display: inline-block;
+        text-align:left;
+}
+.mfizz{
+    font-size: 5em;
+    color: #1E90FF;
+}
+.mfizz:hover{
+    color: #000;
+}
+caption{
+    text-align: center;
+}
+label{
+    text-align: center;
+}
+
+
+/*Logo top left of navbar*/
+
+#logo{
+    z-index: 100;
+    padding-top: 1.5em;
+    padding-left: 3em;
+    padding-bottom: 1em;
+}
+
+.initial
+{
+    font-family: 'Slabo 27px', serif;
+    font-size: 42px;
+    color: #1E90FF;
+
+}
+.initial:hover{
+    color: #0056b3;
+}
+
+/*Navbar CSS*/
+.topbar{
+    border-bottom: 1px solid #252525;
+}
+
+.fixed-top{
+    background-color: #fff;
+}
+header .navbar{
+    margin-bottom: 0;
+    position: absolute;
+    max-width: 100%;
+    top: 1em;
+}
+
+header .navbar .navbar-nav{
+    text-align: right;
+    padding-left: 20px;
+    padding-right: 30px;
+}
+header .navbar .navbar-nav>li{
+    float: none;
+    display: inline-block;
+    vertical-align: top;
+}
+header .navbar .navbar-nav>li>a{
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 20px;
+    padding-left: 0;
+    margin-left: 20px;
+    
+}
+/*@media(min-width: 992px)*/
+/*
+{
+    .col-md-offset-4{
+    margin-left: 33.33333333333%;
+}
+}
+@media (min-width: 992px)
+{
+    .col-md-8 {
+    width: 66.6666667%;
+}
+}
+.container header{
+    width: 100%;
+}
+*/
+
+/*Navbar for smaller screens*/
+/*
+@media (max-width: 992px)
+{
+    .navbar-toggler{
+    color: black;
+}
+    #bootstrap-nav{
+        display:none;
+    }
+    #header{
+    max-width: 100%;
+    }
+}
+navbar-toggler-icon{
+    color: black;
+}
+
+*/
+
+/*
+* Title Section Div
+*/
+#landing{
+    margin-top: 4em;
+    text-align: center;
+    background-color: #1E90FF;
+    max-width: 100%;
+}
+@media (max-width: 992px){
+    #landing h1{
+        font-size: 2em;
+    }
+    #landing i{
+        font-size: 3em;
+    }
+}
+@media (max-width: 606px){
+    #landing h1{
+        font-size: 1.7em;
+    }
+    
+}
+.title{
+    width: 100%;
+}
+.title h1{
+    padding-top: 5em;
+    vertical-align: middle;
+    font-family: 'ubuntu';
+    color: #fff;
+    text-transform: uppercase;
+}
+.code-logos div{
+    display: inline-block;
+    text-align:center;
+    padding: 120px 5px;
+}
+.fa
+{
+    transition: all 1s ease;
+    color: #252525;
+}
+.fa:hover{
+    color: #fff;
+    transform-origin: left 0.5s;
+}

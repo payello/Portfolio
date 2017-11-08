@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<!-- saved from url=(0033)http://127.0.0.1:50490/index.html -->
+<html lang="en" class="fa-events-icons-ready"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Currency Converter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./Currency Converter_files/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./Currency Converter_files/bootstrap-select.min.css">
+    <link href="./Currency Converter_files/css" rel="stylesheet">
+
+<!--Link to CSS code-->
+    <link rel="stylesheet" href="./Currency Converter_files/style.css">
+<link href="./Currency Converter_files/98a3d38fec.css" media="all" rel="stylesheet"></head>
+        
+    
+<body onload="convert();"><header>
+    <nav class="navbar navbar-default">
+        <h1 class="heading">Currency Conversion Application</h1>
+    </nav>
+</header>
+    
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="forexBox">
+                    <div class="forexTitle">
+                    <h2><i class="fa fa-gbp" aria-hidden="true"></i>
+Forex Calculator</h2>
+                    </div>
+                        <table>
+                            <tbody><tr>
+                                <td>
+                                    <div index="input">
+<!--                Input box for numbers, onkeyup convert() function fromCurrency ID-->
+        <input type="number" class="number" id="fromCurrency" min="0" data-bind="value:replyNumber" value="1" onkeyup="convert();">
+                                    </div>
+                                </td>
+                
+                                <td>
+        <select size="50" id="from" class="selectpicker" data-show-subtext="true" data-live-search="true" onchange="convert();" style="display: none;">
+                
+          
+              <option value="AUD">Australian Dollar</option>
+              <option value="BGN">Bulgarian Lev</option>
+              <option value="BRL">Brazilian Real</option>
+              <option value="CAD">Canadan Dollar</option>
+              <option value="CHF">Swiss Franc</option>
+              <option value="CNY">Chinese Yuan</option>
+              <option value="CZK">Czech Koruna</option>
+              <option value="DKK">Danish Krone</option>
+              <option value="GBP" selected="">British Pound</option>
+              <option value="HKD">Hong Kong Dollar</option>
+              <option value="HUF">Hungarian Forint</option>
+              <option value="IDR">Indonesian Rupiah</option>
+              <option value="ILS">Israeli New Shekel</option>
+              <option value="INR">Indian Rupee</option>
+              <option value="JPY">Japanese Yen</option>
+              <option value="KRW">South Korean Won</option>
+              <option value="MXN">Mexican Peso</option>
+              <option value="MYR">Malaysian Ringgit</option>
+              <option value="NOK">Norwegian Krone</option>
+              <option value="NZD">New Zealand Dollar</option>
+              <option value="PHP">Philippine Peso</option>
+              <option value="PLN">Polish Zloty</option>
+              <option value="ROL">Romanian Leu</option>
+              <option value="RUB">Russian Ruble</option>
+              <option value="SEK">Swedish Krona</option>
+              <option value="SGD">Singapore Dollar</option>
+              <option value="THB">Thai Baht</option>
+              <option value="TRY">Turkish Lira</option>
+              <option value="USD">USA Dollar</option>
+              <option value="ZAR">South African Rand</option>
+        
+      </select><div class="btn-group bootstrap-select"><button type="button" class="btn dropdown-toggle selectpicker btn-default" data-toggle="dropdown" data-id="from" title="British Pound"><span class="filter-option pull-left">British Pound</span>&nbsp;<span class="caret"></span></button><div class="dropdown-menu open"><div class="bs-searchbox"><input type="text" class="input-block-level form-control" autocomplete="off"></div><ul class="dropdown-menu inner selectpicker" role="menu"><li data-original-index="0"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;Australian Dollar&lt;/span&gt;"><span class="text">Australian Dollar</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="1"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;Bulgarian Lev&lt;/span&gt;"><span class="text">Bulgarian Lev</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="2"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;Brazilian Real&lt;/span&gt;"><span class="text">Brazilian Real</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="3"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;Canadan Dollar&lt;/span&gt;"><span class="text">Canadan Dollar</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="4"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;Swiss Franc&lt;/span&gt;"><span class="text">Swiss Franc</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="5"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;Chinese Yuan&lt;/span&gt;"><span class="text">Chinese Yuan</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="6"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;Czech Koruna&lt;/span&gt;"><span class="text">Czech Koruna</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="7"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;Danish Krone&lt;/span&gt;"><span class="text">Danish Krone</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="8" class="selected"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;British Pound&lt;/span&gt;"><span class="text">British Pound</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="9"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;Hong Kong Dollar&lt;/span&gt;"><span class="text">Hong Kong Dollar</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="10"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;Hungarian Forint&lt;/span&gt;"><span class="text">Hungarian Forint</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="11"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;Indonesian Rupiah&lt;/span&gt;"><span class="text">Indonesian Rupiah</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="12"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;Israeli New Shekel&lt;/span&gt;"><span class="text">Israeli New Shekel</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="13"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;Indian Rupee&lt;/span&gt;"><span class="text">Indian Rupee</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="14"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;Japanese Yen&lt;/span&gt;"><span class="text">Japanese Yen</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="15"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;South Korean Won&lt;/span&gt;"><span class="text">South Korean Won</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="16"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;Mexican Peso&lt;/span&gt;"><span class="text">Mexican Peso</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="17"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;Malaysian Ringgit&lt;/span&gt;"><span class="text">Malaysian Ringgit</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="18"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;Norwegian Krone&lt;/span&gt;"><span class="text">Norwegian Krone</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="19"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;New Zealand Dollar&lt;/span&gt;"><span class="text">New Zealand Dollar</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="20"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;Philippine Peso&lt;/span&gt;"><span class="text">Philippine Peso</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="21"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;Polish Zloty&lt;/span&gt;"><span class="text">Polish Zloty</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="22"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;Romanian Leu&lt;/span&gt;"><span class="text">Romanian Leu</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="23"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;Russian Ruble&lt;/span&gt;"><span class="text">Russian Ruble</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="24"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;Swedish Krona&lt;/span&gt;"><span class="text">Swedish Krona</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="25"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;Singapore Dollar&lt;/span&gt;"><span class="text">Singapore Dollar</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="26"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;Thai Baht&lt;/span&gt;"><span class="text">Thai Baht</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="27"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;Turkish Lira&lt;/span&gt;"><span class="text">Turkish Lira</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="28"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;USA Dollar&lt;/span&gt;"><span class="text">USA Dollar</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="29"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;South African Rand&lt;/span&gt;"><span class="text">South African Rand</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li></ul></div></div>
+                            </td>
+                        </tr>
+                    </tbody></table>
+       
+        <table>
+        <tbody><tr>
+            <td>
+               <div index="toCurrency">
+    <input type="number" class="number" id="toCurrency" min="0" data-bind="value:replyNumber" disabled="">
+               </div>
+                </td>
+            <td>
+<select size="50" id="to" class="selectpicker" data-show-subtext="true" data-live-search="true" onchange="convert();" style="display: none;">
+                
+  
+    <option value="AUD">Australian Dollar</option>
+      <option value="BGN">Bulgarian Lev</option>
+      <option value="BRL">Brazilian Real</option>
+      <option value="CAD">Canadan Dollar</option>
+      <option value="CHF">Swiss Franc</option>
+      <option value="CNY">Chinese Yuan</option>
+      <option value="CZK">Czech Koruna</option>
+      <option value="DKK">Danish Krone</option>
+      <option value="GBP">British Pound</option>
+      <option value="HKD">Hong Kong Dollar</option>
+      <option value="HUF">Hungarian Forint</option>
+      <option value="IDR">Indonesian Rupiah</option>
+      <option value="ILS">Israeli New Shekel</option>
+      <option value="INR">Indian Rupee</option>
+      <option value="JPY">Japanese Yen</option>
+      <option value="KRW">South Korean Won</option>
+      <option value="MXN">Mexican Peso</option>
+      <option value="MYR">Malaysian Ringgit</option>
+      <option value="NOK">Norwegian Krone</option>
+      <option value="NZD">New Zealand Dollar</option>
+      <option value="PHP">Philippine Peso</option>
+      <option value="PLN">Polish Zloty</option>
+      <option value="ROL">Romanian Leu</option>
+      <option value="RUB">Russian Ruble</option>
+      <option value="SEK">Swedish Krona</option>
+      <option value="SGD">Singapore Dollar</option>
+      <option value="THB">Thai Baht</option>
+      <option value="TRY">Turkish Lira</option>
+      <option value="USD" selected="">USA Dollar</option>
+      <option value="ZAR">South African Rand</option>
+  
+                        </select><div class="btn-group bootstrap-select"><button type="button" class="btn dropdown-toggle selectpicker btn-default" data-toggle="dropdown" data-id="to" title="USA Dollar"><span class="filter-option pull-left">USA Dollar</span>&nbsp;<span class="caret"></span></button><div class="dropdown-menu open"><div class="bs-searchbox"><input type="text" class="input-block-level form-control" autocomplete="off"></div><ul class="dropdown-menu inner selectpicker" role="menu"><li data-original-index="0"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;Australian Dollar&lt;/span&gt;"><span class="text">Australian Dollar</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="1"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;Bulgarian Lev&lt;/span&gt;"><span class="text">Bulgarian Lev</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="2"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;Brazilian Real&lt;/span&gt;"><span class="text">Brazilian Real</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="3"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;Canadan Dollar&lt;/span&gt;"><span class="text">Canadan Dollar</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="4"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;Swiss Franc&lt;/span&gt;"><span class="text">Swiss Franc</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="5"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;Chinese Yuan&lt;/span&gt;"><span class="text">Chinese Yuan</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="6"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;Czech Koruna&lt;/span&gt;"><span class="text">Czech Koruna</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="7"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;Danish Krone&lt;/span&gt;"><span class="text">Danish Krone</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="8"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;British Pound&lt;/span&gt;"><span class="text">British Pound</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="9"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;Hong Kong Dollar&lt;/span&gt;"><span class="text">Hong Kong Dollar</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="10"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;Hungarian Forint&lt;/span&gt;"><span class="text">Hungarian Forint</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="11"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;Indonesian Rupiah&lt;/span&gt;"><span class="text">Indonesian Rupiah</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="12"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;Israeli New Shekel&lt;/span&gt;"><span class="text">Israeli New Shekel</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="13"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;Indian Rupee&lt;/span&gt;"><span class="text">Indian Rupee</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="14"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;Japanese Yen&lt;/span&gt;"><span class="text">Japanese Yen</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="15"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;South Korean Won&lt;/span&gt;"><span class="text">South Korean Won</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="16"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;Mexican Peso&lt;/span&gt;"><span class="text">Mexican Peso</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="17"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;Malaysian Ringgit&lt;/span&gt;"><span class="text">Malaysian Ringgit</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="18"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;Norwegian Krone&lt;/span&gt;"><span class="text">Norwegian Krone</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="19"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;New Zealand Dollar&lt;/span&gt;"><span class="text">New Zealand Dollar</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="20"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;Philippine Peso&lt;/span&gt;"><span class="text">Philippine Peso</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="21"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;Polish Zloty&lt;/span&gt;"><span class="text">Polish Zloty</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="22"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;Romanian Leu&lt;/span&gt;"><span class="text">Romanian Leu</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="23"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;Russian Ruble&lt;/span&gt;"><span class="text">Russian Ruble</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="24"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;Swedish Krona&lt;/span&gt;"><span class="text">Swedish Krona</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="25"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;Singapore Dollar&lt;/span&gt;"><span class="text">Singapore Dollar</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="26"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;Thai Baht&lt;/span&gt;"><span class="text">Thai Baht</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="27"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;Turkish Lira&lt;/span&gt;"><span class="text">Turkish Lira</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="28" class="selected"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;USA Dollar&lt;/span&gt;"><span class="text">USA Dollar</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="29"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;South African Rand&lt;/span&gt;"><span class="text">South African Rand</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li></ul></div></div>
+                        
+              </td>
+                </tr>
+           </tbody></table>
+                       
+
+        <p id="date">Rates correct at  (2017-10-09)</p>
+            </div>
+            </div>
+        <div class="pull-right">
+
+            
+            
+              <h2>Currency Rates to Euro Base Rate</h2>
+            <table align="center">
+            <tbody><tr>
+                <th width="150">Currency</th>
+                <th>Forex Code &amp; Rate</th>
+            </tr>
+            <tr>
+                <td id="long"><p>Australian Dollar</p><p>Bulgarian Lev</p><p>Brazilian Real</p><p>Canadian Dollar</p><p>Swiss Francs</p><p>Chinese Yuan</p><p>Czech Koruna</p><p>Danish Krone</p><p>UK Pound</p><p>Hong Kong Dollar</p><p>Croatian Kuna</p><p>Hungarian Forint</p><p>Indonesian Rupiah</p><p>Israeli New Shekel</p><p>Indian Rupees</p><p>Japanese Yen</p><p>South Korean Won</p><p>Mexican Peso</p><p>Malaysian Ringgit</p><p>Norwegian Krone</p><p>New Zealand Dollar</p><p>Philippino Peso</p><p>Polish Zloty</p><p>Romanian Leu</p><p>Russian Rubles</p><p>Swedish Krona</p><p>Singaporean Dollar</p><p>Thai Baht</p><p>Turkish Lira</p><p>US Dollars</p><p>South African Rand</p></td>
+                <td id="currencyList"><p>AUD - 1.5142</p><p>BGN - 1.9558</p><p>BRL - 3.7168</p><p>CAD - 1.4731</p><p>CHF - 1.1497</p><p>CNY - 7.7788</p><p>CZK - 25.893</p><p>DKK - 7.443</p><p>GBP - 0.89195</p><p>HKD - 9.1685</p><p>HRK - 7.5025</p><p>HUF - 312.32</p><p>IDR - 15897</p><p>ILS - 4.1206</p><p>INR - 76.762</p><p>JPY - 132.36</p><p>KRW - 1343.1</p><p>MXN - 21.884</p><p>MYR - 4.9709</p><p>NOK - 9.3788</p><p>NZD - 1.6588</p><p>PHP - 60.189</p><p>PLN - 4.3077</p><p>RON - 4.5754</p><p>RUB - 68.538</p><p>SEK - 9.5348</p><p>SGD - 1.6013</p><p>THB - 39.214</p><p>TRY - 4.3636</p><p>USD - 1.1746</p><p>ZAR - 16.199</p></td>
+            </tr>
+            
+            
+            
+            
+            </tbody></table>
+<!--
+            <div class="table">
+                <div class="row" id="currencyList" class="currencyList"></div>
+                <div class="row" id="long"></div>
+-->
+          
+        </div>
+    </div>
+    </div>
+            <script src="./Currency Converter_files/jquery.min.js"></script>
+            <script src="./Currency Converter_files/98a3d38fec.js"></script>
+
+            <script src="./Currency Converter_files/bootstrap.min.js"></script>
+            <script src="./Currency Converter_files/bootstrap-select.min.js"></script>
+            <script src="./Currency Converter_files/code.js"></script>
+    
+</body></html>
